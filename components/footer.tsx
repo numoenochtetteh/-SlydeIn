@@ -1,6 +1,24 @@
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowUpRight, Instagram, MapPin, MessageCircle } from "lucide-react"
+import { ArrowUpRight, Instagram, MapPin } from "lucide-react"
+
+function WhatsAppIcon({ className = "h-4 w-4" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" className={className}>
+      <path
+        d="M20.25 11.7a8.25 8.25 0 0 1-12.15 7.27L3.75 20.1l1.18-4.2A8.25 8.25 0 1 1 20.25 11.7Z"
+        stroke="currentColor"
+        strokeWidth="1.7"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M8.15 7.55c.22-.5.45-.51.66-.52h.56c.16 0 .39.06.5.36l.7 1.68c.08.2.04.37-.08.55l-.55.72c-.1.14-.2.27-.08.47.35.61.81 1.16 1.36 1.62.54.45 1.14.81 1.78 1.06.2.08.34.04.47-.11l.73-.86c.14-.16.31-.2.5-.13l1.73.82c.22.1.37.2.42.34.06.15.06.85-.2 1.49-.27.65-1.56 1.24-2.14 1.3-.55.06-1.24.09-2.02-.15a8.5 8.5 0 0 1-2.06-.93 10.4 10.4 0 0 1-3.28-2.95c-.93-1.24-1.45-2.62-1.46-3.65 0-.66.22-1.04.46-1.11Z"
+        fill="currentColor"
+      />
+    </svg>
+  )
+}
 
 export function Footer() {
   return (
@@ -8,9 +26,7 @@ export function Footer() {
       <div className="mx-auto w-full max-w-[1500px] px-6 py-12 md:px-10 md:py-14 lg:px-14">
         <div className="grid gap-12 border-b border-white/16 pb-10 lg:grid-cols-[1.15fr_.85fr] lg:items-end">
           <div>
-            <p className="mb-4 text-[10px] font-semibold uppercase tracking-[0.3em] text-[#F3C96A]">
-              Stay in the loop
-            </p>
+            <p className="mb-4 text-[10px] font-semibold uppercase tracking-[0.3em] text-[#F3C96A]">Stay in the loop</p>
             <h2 className="max-w-[12ch] text-[clamp(2.35rem,4.2vw,4.4rem)] font-medium leading-[0.94] tracking-[-0.045em]">
               Be there before the story starts.
             </h2>
@@ -30,10 +46,7 @@ export function Footer() {
                 Get tickets
                 <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </a>
-              <a
-                href="#"
-                className="inline-flex items-center gap-2 text-sm text-white/78 transition hover:text-[#F3C96A]"
-              >
+              <a href="#" className="inline-flex items-center gap-2 text-sm text-white/78 transition hover:text-[#F3C96A]">
                 <Instagram className="h-4 w-4" /> Follow on Instagram
               </a>
             </div>
@@ -69,7 +82,7 @@ export function Footer() {
             <p className="mb-4 text-xs font-semibold uppercase tracking-[0.18em] text-[#F3C96A]">Connect</p>
             <div className="space-y-3 text-sm text-white/78">
               <a href="https://wa.me/233545500006" target="_blank" rel="noreferrer" className="flex items-center gap-2 transition hover:text-white">
-                <MessageCircle className="h-4 w-4" /> WhatsApp
+                <WhatsAppIcon className="h-4 w-4" /> WhatsApp
               </a>
               <a href="#" className="flex items-center gap-2 transition hover:text-white">
                 <Instagram className="h-4 w-4" /> Instagram
