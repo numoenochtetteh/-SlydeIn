@@ -1,22 +1,16 @@
-COPY THESE TWO FOLDERS INTO THE ROOT OF YOUR SLYDEIN PROJECT:
-- app
-- public
+SLYDEIN LATEST CONTENT UPDATE
 
-Choose Replace/Merge when Windows asks.
+Copy the `components` and `public` folders into the root of your SlydeIn project and choose Replace/Merge.
 
-IMPORTANT: after copying, confirm these files exist locally:
-public/slydein-favicon-v2.png
-public/slydein-og-preview-v2.png
-app/layout.tsx
-app/opengraph-image.tsx
+Changes:
+- Replaced featured-05.webp (orange toast photo) with the new vertical party photo.
+- Replaced featured-06.webp (white kitchen photo) with the new green-outfit party photo.
+- Updated Instagram CTAs in projects.tsx to:
+  https://www.instagram.com/theslydeinparty/
+- Updated Instagram links in footer.tsx to the same URL.
+- Kept the EgoTickets URL intact in the footer.
 
 Then run:
-git add .
-git commit -m "Fix SlydeIn favicon and social preview files"
-git push origin main
-
-After Vercel deploys, test:
-https://slyde-in-one.vercel.app/slydein-favicon-v2.png
-https://slyde-in-one.vercel.app/slydein-og-preview-v2.png
-
-If both images open, the deployment is correct.
+  git add .
+  git commit -m "Update SlydeIn featured photos and Instagram links"
+  git push origin main

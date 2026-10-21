@@ -53,7 +53,7 @@ export function Projects() {
               A closer look at the nights, people and moments that make SlydeIn more than just another party.
             </p>
             <a
-              href="https://www.instagram.com/"
+              href="https://www.instagram.com/theslydeinparty/"
               target="_blank"
               rel="noreferrer"
               className="mt-5 inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.18em] text-[#5E1850] transition hover:gap-3 dark:text-[#d79bc9]"
@@ -113,7 +113,7 @@ export function Projects() {
                   </p>
 
                   <a
-                    href="https://www.instagram.com/"
+                    href="https://www.instagram.com/theslydeinparty/"
                     target="_blank"
                     rel="noreferrer"
                     className="group/link ml-auto inline-flex items-center gap-3 bg-[#5E1850] px-5 py-3 text-[11px] font-bold uppercase tracking-[0.16em] text-white transition hover:-translate-y-0.5 hover:bg-[#741f64]"
@@ -130,4 +130,3 @@ export function Projects() {
     </section>
   )
 }
-

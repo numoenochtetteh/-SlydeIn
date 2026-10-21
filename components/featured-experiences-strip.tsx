@@ -8,8 +8,8 @@ const photos = [
   { src: "/experiences/featured-02.webp", alt: "SlydeIn guest dancing at a party" },
   { src: "/experiences/featured-03.webp", alt: "Friends celebrating with sparklers" },
   { src: "/experiences/featured-04.webp", alt: "Guests dancing at a SlydeIn experience" },
-  { src: "/experiences/featured-05.webp", alt: "Friends together at a nightlife event" },
-  { src: "/experiences/featured-06.webp", alt: "Guests sharing food at a house party" },
+  { src: "/experiences/featured-05.webp", alt: "SlydeIn guests enjoying drinks at a house party" },
+  { src: "/experiences/featured-06.webp", alt: "SlydeIn guest relaxing with friends at a house party" },
   { src: "/experiences/featured-07.webp", alt: "SlydeIn house party guests gathered together" },
 ]
 

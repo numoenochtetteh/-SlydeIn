@@ -46,7 +46,7 @@ export function Footer() {
                 Get tickets
                 <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </a>
-              <a href="#" className="inline-flex items-center gap-2 text-sm text-white/78 transition hover:text-[#F3C96A]">
+              <a href="https://www.instagram.com/theslydeinparty/" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-sm text-white/78 transition hover:text-[#F3C96A]">
                 <Instagram className="h-4 w-4" /> Follow on Instagram
               </a>
             </div>
@@ -84,7 +84,7 @@ export function Footer() {
               <a href="https://wa.me/233545500006" target="_blank" rel="noreferrer" className="flex items-center gap-2 transition hover:text-white">
                 <WhatsAppIcon className="h-4 w-4" /> WhatsApp
               </a>
-              <a href="#" className="flex items-center gap-2 transition hover:text-white">
+              <a href="https://www.instagram.com/theslydeinparty/" target="_blank" rel="noreferrer" className="flex items-center gap-2 transition hover:text-white">
                 <Instagram className="h-4 w-4" /> Instagram
               </a>
               <a href="#" className="block transition hover:text-white">X / Twitter</a>
@@ -112,4 +112,3 @@ export function Footer() {
     </footer>
   )
 }
-
