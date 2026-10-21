@@ -43,7 +43,7 @@ export function Header() {
         <div
           className={`overflow-hidden transition-all duration-500 ease-out ${
             scrolled
-              ? "rounded-[22px] border border-black/10 bg-white/95 text-black shadow-[0_12px_36px_rgba(0,0,0,0.14)] backdrop-blur-xl"
+              ? "rounded-[22px] border border-black/10 bg-[#FCFBF8] text-black shadow-[0_12px_36px_rgba(0,0,0,0.14)] backdrop-blur-xl"
               : "border border-transparent bg-transparent text-white shadow-none"
           }`}
         >
@@ -112,7 +112,7 @@ export function Header() {
                 </div>
 
                 <a
-                  href="https://tickets.slydein.com"
+                  href="https://egotickets.com/events/slyde-in-houseparty-7da4146a"
                   target="_blank"
                   rel="noreferrer"
                   className="mt-2 flex h-11 w-full items-center justify-center rounded-[10px] bg-[#5E1850] text-sm font-semibold text-white"
@@ -134,7 +134,7 @@ export function Header() {
         <div
           className={`transition-all duration-500 ease-out ${
             scrolled
-              ? "rounded-[22px] border border-black/10 bg-white/94 text-black shadow-[0_12px_40px_rgba(0,0,0,0.10)] backdrop-blur-xl dark:border-white/10 dark:bg-[#111111]/94 dark:text-white"
+              ? "rounded-[22px] border border-black/10 bg-[#FCFBF8] text-black shadow-[0_12px_40px_rgba(0,0,0,0.10)] backdrop-blur-xl"
               : "border border-transparent bg-transparent text-white shadow-none"
           }`}
         >
@@ -155,7 +155,7 @@ export function Header() {
 
             <ul
               className={`flex items-center gap-8 text-sm transition-colors duration-500 lg:gap-10 ${
-                scrolled ? "text-black/65 dark:text-white/65" : "text-white/80"
+                scrolled ? "text-black/65" : "text-white/80"
               }`}
             >
               {navItems.map((item) => (
@@ -164,7 +164,7 @@ export function Header() {
                     href={item.href}
                     className={`transition-colors ${
                       scrolled
-                        ? "hover:text-black dark:hover:text-white"
+                        ? "hover:text-black"
                         : "hover:text-white"
                     }`}
                   >
@@ -179,7 +179,7 @@ export function Header() {
                 <ThemeToggle />
               </div>
               <a
-                href="https://tickets.slydein.com"
+                href="https://egotickets.com/events/slyde-in-houseparty-7da4146a"
                 target="_blank"
                 rel="noreferrer"
                 className={`inline-flex items-center justify-center rounded-full text-sm font-medium transition-all duration-500 ease-out hover:-translate-y-0.5 ${
@@ -197,3 +197,4 @@ export function Header() {
     </header>
   )
 }
+

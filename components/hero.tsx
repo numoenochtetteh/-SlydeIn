@@ -35,7 +35,7 @@ export function Hero() {
 
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <a
-              href="https://tickets.slydein.com"
+              href="https://egotickets.com/events/slyde-in-houseparty-7da4146a"
               target="_blank"
               rel="noreferrer"
               className="inline-flex min-w-44 items-center justify-center bg-[#5e1850] px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.16em] text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#7b226a]"
@@ -56,3 +56,4 @@ export function Hero() {
     </section>
   )
 }
+

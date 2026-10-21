@@ -36,7 +36,7 @@ export function ExperienceFeature() {
             </p>
 
             <a
-              href="https://tickets.slydein.com"
+              href="https://egotickets.com/events/slyde-in-houseparty-7da4146a"
               target="_blank"
               rel="noreferrer"
               className="mt-5 inline-flex items-center gap-2"
@@ -88,7 +88,7 @@ export function ExperienceFeature() {
             </p>
 
             <a
-              href="https://tickets.slydein.com"
+              href="https://egotickets.com/events/slyde-in-houseparty-7da4146a"
               target="_blank"
               rel="noreferrer"
               className="mt-6 inline-flex items-center gap-2"
@@ -106,3 +106,4 @@ export function ExperienceFeature() {
     </section>
   )
 }
+

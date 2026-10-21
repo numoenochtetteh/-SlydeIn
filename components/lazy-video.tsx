@@ -60,3 +60,4 @@ export function LazyVideo({ src, poster, className = "", priority = false }: Laz
     </video>
   )
 }
+

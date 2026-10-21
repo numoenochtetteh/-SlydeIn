@@ -52,3 +52,4 @@ export function HighlightedText({ children }: { children: React.ReactNode }) {
     </span>
   )
 }
+

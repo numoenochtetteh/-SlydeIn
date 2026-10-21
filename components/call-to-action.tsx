@@ -18,7 +18,7 @@ export function CallToAction() {
             Find the next party, secure your ticket or speak with the team about creating an experience of your own.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://tickets.slydein.com" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-3 bg-primary-foreground text-foreground px-8 py-4 text-sm tracking-wide hover:bg-[#d79bc9] transition-colors duration-300 group">
+            <a href="https://egotickets.com/events/slyde-in-houseparty-7da4146a" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-3 bg-primary-foreground text-foreground px-8 py-4 text-sm tracking-wide hover:bg-[#d79bc9] transition-colors duration-300 group">
               Get tickets
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
             </a>
@@ -31,3 +31,4 @@ export function CallToAction() {
     </section>
   )
 }
+

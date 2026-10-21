@@ -20,14 +20,14 @@ const upcoming = [
 
 export function ComingUpNext() {
   return (
-    <section className="bg-background px-4 py-24 text-foreground sm:px-6 md:px-8 md:py-32 lg:px-12">
+    <section id="events" className="bg-background px-4 py-24 text-foreground sm:px-6 md:px-8 md:py-32 lg:px-12">
       <div className="mx-auto max-w-7xl">
         <div className="mb-12 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div>
             <p className="mb-4 text-[10px] font-semibold uppercase tracking-[0.34em] text-[#5e1850] dark:text-[#d79bc9]">Don&apos;t miss the next one</p>
             <h2 className="text-4xl font-semibold tracking-[-0.05em] sm:text-5xl md:text-6xl">Coming up next</h2>
           </div>
-          <a href="https://tickets.slydein.com" target="_blank" rel="noreferrer" className="group inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#5e1850] transition hover:text-[#7b226a] dark:text-[#d79bc9] dark:hover:text-white">
+          <a href="https://egotickets.com/events/slyde-in-houseparty-7da4146a" target="_blank" rel="noreferrer" className="group inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#5e1850] transition hover:text-[#7b226a] dark:text-[#d79bc9] dark:hover:text-white">
             View all events <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
           </a>
         </div>
@@ -61,3 +61,4 @@ export function ComingUpNext() {
     </section>
   )
 }
+

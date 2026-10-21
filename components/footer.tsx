@@ -38,7 +38,7 @@ export function Footer() {
             </p>
             <div className="flex flex-col items-start gap-3 sm:items-end">
               <a
-                href="https://tickets.slydein.com"
+                href="https://egotickets.com/events/slyde-in-houseparty-7da4146a"
                 target="_blank"
                 rel="noreferrer"
                 className="group inline-flex items-center gap-3 bg-[#F3C96A] px-5 py-3 text-xs font-semibold uppercase tracking-[0.17em] text-[#3b0d32] transition hover:-translate-y-0.5"
@@ -72,7 +72,7 @@ export function Footer() {
             <div className="space-y-3 text-sm text-white/78">
               <Link href="#events" className="block transition hover:text-white">Events</Link>
               <Link href="#faq" className="block transition hover:text-white">FAQ</Link>
-              <a href="https://tickets.slydein.com" target="_blank" rel="noreferrer" className="inline-flex items-center gap-1.5 transition hover:text-white">
+              <a href="https://egotickets.com/events/slyde-in-houseparty-7da4146a" target="_blank" rel="noreferrer" className="inline-flex items-center gap-1.5 transition hover:text-white">
                 Tickets <ArrowUpRight className="h-3.5 w-3.5" />
               </a>
             </div>
@@ -112,3 +112,4 @@ export function Footer() {
     </footer>
   )
 }
+
