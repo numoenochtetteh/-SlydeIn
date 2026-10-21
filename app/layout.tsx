@@ -8,9 +8,34 @@ import { ThemeProvider } from "@/components/theme-provider"
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://slyde-in-one.vercel.app"),
   title: "SlydeIn — Parties, Nightlife & Events in Ghana",
   description:
     "Discover SlydeIn parties, nightlife experiences, event services and tickets in Ghana.",
+  openGraph: {
+    title: "SlydeIn — Parties, Nightlife & Events in Ghana",
+    description:
+      "Discover SlydeIn parties, nightlife experiences, event services and tickets in Ghana.",
+    url: "/",
+    siteName: "SlydeIn",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "SlydeIn — Africa's biggest houseparty",
+      },
+    ],
+    locale: "en_GH",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SlydeIn — Parties, Nightlife & Events in Ghana",
+    description:
+      "Discover SlydeIn parties, nightlife experiences, event services and tickets in Ghana.",
+    images: ["/opengraph-image"],
+  },
   icons: {
     icon: [
       {
