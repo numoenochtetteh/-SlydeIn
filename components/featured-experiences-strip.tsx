@@ -9,10 +9,11 @@ const photos = [
   { src: "/experiences/featured-03.webp", alt: "Friends celebrating with sparklers" },
   { src: "/experiences/featured-04.webp", alt: "Guests dancing at a SlydeIn experience" },
   { src: "/experiences/featured-05.webp", alt: "Friends together at a nightlife event" },
-  { src: "/experiences/featured-06.webp", alt: "Friends enjoying a SlydeIn night" },
+  { src: "/experiences/featured-06.webp", alt: "Guests sharing food at a house party" },
+  { src: "/experiences/featured-07.webp", alt: "SlydeIn house party guests gathered together" },
 ]
 
-const rotations = ["-rotate-[3deg]", "rotate-[2.4deg]", "-rotate-[1.5deg]", "rotate-[2deg]", "-rotate-[2.3deg]", "rotate-[1.4deg]"]
+const rotations = ["-rotate-[3deg]", "rotate-[2.4deg]", "-rotate-[1.5deg]", "rotate-[2deg]", "-rotate-[2.3deg]", "rotate-[1.4deg]", "-rotate-[1.8deg]"]
 
 export function FeaturedExperiencesStrip() {
   const scrollerRef = useRef<HTMLDivElement>(null)
@@ -100,7 +101,7 @@ export function FeaturedExperiencesStrip() {
   const repeated = [...photos, ...photos, ...photos]
 
   return (
-    <section className="overflow-hidden bg-[#f3efe7] py-12 text-black sm:py-14 lg:py-16">
+    <section className="overflow-hidden bg-[#F3EEE4] py-12 text-black sm:py-14 lg:py-16">
       <div className="mb-8 flex items-end justify-between gap-6 px-5 sm:px-8 lg:px-12">
         <div>
           <p className="text-[0.68rem] font-bold uppercase tracking-[0.25em] text-[#5E1850] sm:text-xs">
@@ -111,12 +112,12 @@ export function FeaturedExperiencesStrip() {
           </h2>
         </div>
 
-        <p className="hidden shrink-0 text-right text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-black/55 sm:block">
+        <p className="hidden shrink-0 text-right text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-[#5E1850]/70 sm:block">
           Slyde to see more featured experiences →
         </p>
       </div>
 
-      <p className="mb-7 px-5 text-[0.66rem] font-semibold uppercase tracking-[0.2em] text-black/55 sm:hidden">
+      <p className="mb-7 px-5 text-[0.66rem] font-semibold uppercase tracking-[0.2em] text-[#5E1850]/70 sm:hidden">
         Slyde to see more featured experiences →
       </p>
 
@@ -131,7 +132,7 @@ export function FeaturedExperiencesStrip() {
             key={`${photo.src}-${index}`}
             className={`relative shrink-0 ${rotations[index % rotations.length]} w-[250px] sm:w-[285px] lg:w-[330px]`}
           >
-            <div className="rounded-[5px] bg-[#11110f] p-[10px] pb-9 shadow-[0_14px_35px_rgba(0,0,0,0.16)] transition-transform duration-300 hover:-translate-y-1 sm:p-3 sm:pb-10">
+            <div className="rounded-[5px] bg-[#1B1419] p-[10px] pb-9 shadow-[0_14px_35px_rgba(0,0,0,0.16)] transition-transform duration-300 hover:-translate-y-1 sm:p-3 sm:pb-10">
               <div className="relative h-[305px] overflow-hidden bg-black sm:h-[350px] lg:h-[405px]">
                 <Image
                   src={photo.src}
@@ -158,4 +159,3 @@ export function FeaturedExperiencesStrip() {
     </section>
   )
 }
-

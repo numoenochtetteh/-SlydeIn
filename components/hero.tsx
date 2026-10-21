@@ -25,7 +25,7 @@ export function Hero() {
             Africa&apos;s biggest houseparty
           </p>
 
-          <h1 className="text-balance text-[3.35rem] font-medium leading-[0.95] tracking-[-0.055em] text-white sm:text-6xl md:text-7xl lg:text-[4.9rem]">
+          <h1 className="text-balance text-[3.15rem] font-medium leading-[0.98] tracking-[-0.05em] text-white sm:text-[3.65rem] md:text-[4.15rem] lg:text-[4.45rem]">
             Where the night comes alive.
           </h1>
 
@@ -56,4 +56,3 @@ export function Hero() {
     </section>
   )
 }
-
