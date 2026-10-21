@@ -12,30 +12,6 @@ export const metadata: Metadata = {
   title: "SlydeIn — Parties, Nightlife & Events in Ghana",
   description:
     "Discover SlydeIn parties, nightlife experiences, event services and tickets in Ghana.",
-  openGraph: {
-    title: "SlydeIn — Parties, Nightlife & Events in Ghana",
-    description:
-      "Discover SlydeIn parties, nightlife experiences, event services and tickets in Ghana.",
-    url: "/",
-    siteName: "SlydeIn",
-    images: [
-      {
-        url: "/opengraph-image",
-        width: 1200,
-        height: 630,
-        alt: "SlydeIn — Africa's biggest houseparty",
-      },
-    ],
-    locale: "en_GH",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "SlydeIn — Parties, Nightlife & Events in Ghana",
-    description:
-      "Discover SlydeIn parties, nightlife experiences, event services and tickets in Ghana.",
-    images: ["/opengraph-image"],
-  },
   icons: {
     icon: [
       {
@@ -52,6 +28,30 @@ export const metadata: Metadata = {
       },
     ],
     apple: "/apple-icon.png",
+  },
+  openGraph: {
+    title: "SlydeIn — Parties, Nightlife & Events in Ghana",
+    description:
+      "Discover SlydeIn parties, nightlife experiences, event services and tickets in Ghana.",
+    url: "https://slyde-in-one.vercel.app/",
+    siteName: "SlydeIn",
+    images: [
+      {
+        url: "/slydein-og-preview.png",
+        width: 1731,
+        height: 909,
+        alt: "SlydeIn — Africa's biggest houseparty",
+      },
+    ],
+    locale: "en_GH",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SlydeIn — Parties, Nightlife & Events in Ghana",
+    description:
+      "Discover SlydeIn parties, nightlife experiences, event services and tickets in Ghana.",
+    images: ["/slydein-og-preview.png"],
   },
 }
 
