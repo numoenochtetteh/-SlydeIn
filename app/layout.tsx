@@ -13,20 +13,8 @@ export const metadata: Metadata = {
   description:
     "Discover SlydeIn parties, nightlife experiences, event services and tickets in Ghana.",
   icons: {
-    icon: [
-      {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
-      },
-    ],
+    icon: [{ url: "/slydein-favicon-v2.png", type: "image/png", sizes: "512x512" }],
+    shortcut: "/slydein-favicon-v2.png",
     apple: "/apple-icon.png",
   },
   openGraph: {
@@ -37,9 +25,9 @@ export const metadata: Metadata = {
     siteName: "SlydeIn",
     images: [
       {
-        url: "/slydein-og-preview.png",
-        width: 1731,
-        height: 909,
+        url: "/slydein-og-preview-v2.png",
+        width: 1200,
+        height: 630,
         alt: "SlydeIn — Africa's biggest houseparty",
       },
     ],
@@ -51,7 +39,7 @@ export const metadata: Metadata = {
     title: "SlydeIn — Parties, Nightlife & Events in Ghana",
     description:
       "Discover SlydeIn parties, nightlife experiences, event services and tickets in Ghana.",
-    images: ["/slydein-og-preview.png"],
+    images: ["/slydein-og-preview-v2.png"],
   },
 }
 
