@@ -16,7 +16,11 @@ export function Header() {
   const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 40)
+    const onScroll = () => {
+      setScrolled(window.scrollY > 40)
+      setMobileMenuOpen(false)
+    }
+
     onScroll()
     window.addEventListener("scroll", onScroll, { passive: true })
     return () => window.removeEventListener("scroll", onScroll)
@@ -163,9 +167,7 @@ export function Header() {
                   <Link
                     href={item.href}
                     className={`transition-colors ${
-                      scrolled
-                        ? "hover:text-black"
-                        : "hover:text-white"
+                      scrolled ? "hover:text-black" : "hover:text-white"
                     }`}
                   >
                     {item.label}
@@ -197,4 +199,3 @@ export function Header() {
     </header>
   )
 }
-

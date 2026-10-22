@@ -20,6 +20,33 @@ function WhatsAppIcon({ className = "h-4 w-4" }: { className?: string }) {
   )
 }
 
+function XIcon({ className = "h-4 w-4" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" className={className}>
+      <path
+        d="M5 4.5 19 19.5M19 4.5 5 19.5"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+      />
+    </svg>
+  )
+}
+
+function ThreadsIcon({ className = "h-4 w-4" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" className={className}>
+      <path
+        d="M17.7 8.2c-.8-2.7-2.8-4.2-5.7-4.2-4.1 0-7 3-7 8s2.9 8 7 8c3.8 0 6.5-2.3 6.5-5.5 0-2.8-2-4.5-5.2-4.5-2.8 0-4.8 1.3-4.8 3.3 0 1.8 1.5 3.1 3.6 3.1 2.8 0 4.6-2 4.6-5.2 0-3.8-2.3-6.2-6-6.2"
+        stroke="currentColor"
+        strokeWidth="1.7"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  )
+}
+
 export function Footer() {
   return (
     <footer className="border-t border-white/10 bg-[#5E1850] text-white">
@@ -87,7 +114,17 @@ export function Footer() {
               <a href="https://www.instagram.com/theslydeinparty/" target="_blank" rel="noreferrer" className="flex items-center gap-2 transition hover:text-white">
                 <Instagram className="h-4 w-4" /> Instagram
               </a>
-              <a href="#" className="block transition hover:text-white">X / Twitter</a>
+              <a href="https://x.com/slydeinparty" target="_blank" rel="noreferrer" className="flex items-center gap-2 transition hover:text-white">
+                <XIcon className="h-4 w-4" /> X / Twitter
+              </a>
+              <a
+                href="https://www.threads.com/@theslydeinparty?xmt=AQG0DfCj0tYJRjBbo4iR9PMjDh2_gucihRuMImO-zJQsCWI"
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center gap-2 transition hover:text-white"
+              >
+                <ThreadsIcon className="h-4 w-4" /> Threads
+              </a>
             </div>
           </div>
 
