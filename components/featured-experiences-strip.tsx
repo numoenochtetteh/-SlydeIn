@@ -101,10 +101,10 @@ export function FeaturedExperiencesStrip() {
   const repeated = [...photos, ...photos, ...photos]
 
   return (
-    <section className="overflow-hidden bg-[#F3EEE4] py-12 text-black sm:py-14 lg:py-16">
+    <section className="overflow-hidden bg-[#F3EEE4] py-12 text-black transition-colors duration-300 dark:bg-[#0D0B0C] dark:text-white sm:py-14 lg:py-16">
       <div className="mb-8 flex items-end justify-between gap-6 px-5 sm:px-8 lg:px-12">
         <div>
-          <p className="text-[0.68rem] font-bold uppercase tracking-[0.25em] text-[#5E1850] sm:text-xs">
+          <p className="text-[0.68rem] font-bold uppercase tracking-[0.25em] text-[#5E1850] dark:text-[#D79BC9] sm:text-xs">
             Featured experiences
           </p>
           <h2 className="mt-2 max-w-2xl text-3xl font-semibold tracking-[-0.04em] sm:text-4xl lg:text-5xl">
@@ -112,12 +112,12 @@ export function FeaturedExperiencesStrip() {
           </h2>
         </div>
 
-        <p className="hidden shrink-0 text-right text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-[#5E1850]/70 sm:block">
+        <p className="hidden shrink-0 text-right text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-[#5E1850]/70 dark:text-[#D79BC9]/75 sm:block">
           Slyde to see more featured experiences →
         </p>
       </div>
 
-      <p className="mb-7 px-5 text-[0.66rem] font-semibold uppercase tracking-[0.2em] text-[#5E1850]/70 sm:hidden">
+      <p className="mb-7 px-5 text-[0.66rem] font-semibold uppercase tracking-[0.2em] text-[#5E1850]/70 dark:text-[#D79BC9]/75 sm:hidden">
         Slyde to see more featured experiences →
       </p>
 
