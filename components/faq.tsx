@@ -42,9 +42,9 @@ export function FAQ() {
       <div className="container mx-auto px-4 sm:px-6 md:px-12">
         {/* PHONE ONLY: Viral-style FAQ */}
         <div className="mx-auto max-w-[430px] md:hidden">
-          <div className="rounded-[28px] bg-[#EDE7DD] p-5 text-black shadow-[0_10px_35px_rgba(0,0,0,0.03)]">
+          <div className="rounded-[28px] bg-[#EDE7DD] p-5 text-black shadow-[0_10px_35px_rgba(0,0,0,0.03)] transition-colors duration-300 dark:bg-[#171313] dark:text-white dark:shadow-[0_10px_35px_rgba(0,0,0,0.22)]">
             <div className="mb-9">
-              <span className="inline-flex rounded-[9px] bg-black/[0.045] px-3 py-2 text-sm font-medium">
+              <span className="inline-flex rounded-[9px] bg-black/[0.045] px-3 py-2 text-sm font-medium dark:bg-white/[0.07]">
                 Questions
               </span>
 
@@ -59,7 +59,7 @@ export function FAQ() {
               {faqs.map((faq, index) => {
                 const isOpen = openIndex === index
                 return (
-                  <div key={faq.question} className="overflow-hidden rounded-[14px] bg-[#F7F3EC]">
+                  <div key={faq.question} className="overflow-hidden rounded-[14px] bg-[#F7F3EC] transition-colors duration-300 dark:bg-white/[0.055]">
                     <button
                       type="button"
                       onClick={() => setOpenIndex(isOpen ? null : index)}
@@ -67,7 +67,7 @@ export function FAQ() {
                       aria-expanded={isOpen}
                     >
                       <span className="max-w-[82%] text-[0.96rem] font-medium leading-6">{faq.question}</span>
-                      <span className="grid h-8 w-8 shrink-0 place-items-center rounded-[8px] bg-[#5E1850] text-white">
+                      <span className="grid h-8 w-8 shrink-0 place-items-center rounded-[8px] bg-[#5E1850] text-white dark:bg-[#7C236A]">
                         {isOpen ? <X className="h-4 w-4" strokeWidth={2} /> : <Plus className="h-4 w-4" strokeWidth={2} />}
                       </span>
                     </button>
@@ -78,7 +78,7 @@ export function FAQ() {
                       }`}
                     >
                       <div className="overflow-hidden">
-                        <p className="px-4 pb-5 pr-14 text-sm leading-6 text-black/55">{faq.answer}</p>
+                        <p className="px-4 pb-5 pr-14 text-sm leading-6 text-black/55 dark:text-white/58">{faq.answer}</p>
                       </div>
                     </div>
                   </div>
@@ -170,4 +170,3 @@ export function FAQ() {
     </section>
   )
 }
-
