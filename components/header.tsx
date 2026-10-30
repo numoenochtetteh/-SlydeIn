@@ -47,7 +47,7 @@ export function Header() {
         <div
           className={`overflow-hidden transition-all duration-500 ease-out ${
             scrolled
-              ? "rounded-[22px] border border-black/10 bg-[#FCFBF8] text-black shadow-[0_12px_36px_rgba(0,0,0,0.14)] backdrop-blur-xl"
+              ? "rounded-[22px] border border-black/10 bg-[#FCFBF8] text-black shadow-[0_12px_36px_rgba(0,0,0,0.14)] backdrop-blur-xl dark:border-white/10 dark:bg-[#171313]/95 dark:text-white dark:shadow-[0_12px_36px_rgba(0,0,0,0.32)]"
               : "border border-transparent bg-transparent text-white shadow-none"
           }`}
         >
@@ -73,7 +73,7 @@ export function Header() {
               onClick={() => setMobileMenuOpen((prev) => !prev)}
               className={`grid place-items-center transition-all duration-500 ease-out active:scale-95 ${
                 scrolled
-                  ? "h-9 w-9 rounded-[10px] border border-black/10 bg-white text-black"
+                  ? "h-9 w-9 rounded-[10px] border border-black/10 bg-white text-black dark:border-white/10 dark:bg-white/[0.08] dark:text-white"
                   : "h-11 w-11 rounded-[12px] border border-white/35 bg-black/10 text-white backdrop-blur-sm"
               }`}
             >
@@ -94,18 +94,18 @@ export function Header() {
           <div
             className={`overflow-hidden transition-[max-height,opacity] duration-300 ease-out ${
               mobileMenuOpen
-                ? "max-h-[430px] border-t border-black/10 opacity-100"
+                ? "max-h-[430px] border-t border-black/10 opacity-100 dark:border-white/10"
                 : "max-h-0 opacity-0"
             }`}
           >
             <div className="p-4">
-              <div className="rounded-[18px] border border-black/8 bg-[#fafafa] p-2">
+              <div className="rounded-[18px] border border-black/8 bg-[#fafafa] p-2 dark:border-white/10 dark:bg-[#211b1f]">
                 {navItems.map((item) => (
                   <Link
                     key={item.label}
                     href={item.href}
                     onClick={() => setMobileMenuOpen(false)}
-                    className="block rounded-xl px-4 py-3 text-[0.98rem] text-black/65 transition hover:bg-black/[0.04] hover:text-black"
+                    className="block rounded-xl px-4 py-3 text-[0.98rem] text-black/65 transition hover:bg-black/[0.04] hover:text-black dark:text-white/70 dark:hover:bg-white/[0.06] dark:hover:text-white"
                   >
                     {item.label}
                   </Link>
@@ -119,7 +119,7 @@ export function Header() {
                   href="https://egotickets.com/events/slyde-in-houseparty-7da4146a"
                   target="_blank"
                   rel="noreferrer"
-                  className="mt-2 flex h-11 w-full items-center justify-center rounded-[10px] bg-[#5E1850] text-sm font-semibold text-white"
+                  className="mt-2 flex h-11 w-full items-center justify-center rounded-[10px] bg-[#5E1850] text-sm font-semibold text-white hover:bg-[#741f64]"
                 >
                   Get tickets
                 </a>
@@ -138,7 +138,7 @@ export function Header() {
         <div
           className={`transition-all duration-500 ease-out ${
             scrolled
-              ? "rounded-[22px] border border-black/10 bg-[#FCFBF8] text-black shadow-[0_12px_40px_rgba(0,0,0,0.10)] backdrop-blur-xl"
+              ? "rounded-[22px] border border-black/10 bg-[#FCFBF8] text-black shadow-[0_12px_40px_rgba(0,0,0,0.10)] backdrop-blur-xl dark:border-white/10 dark:bg-[#171313]/95 dark:text-white dark:shadow-[0_12px_40px_rgba(0,0,0,0.28)]"
               : "border border-transparent bg-transparent text-white shadow-none"
           }`}
         >
@@ -159,7 +159,7 @@ export function Header() {
 
             <ul
               className={`flex items-center gap-8 text-sm transition-colors duration-500 lg:gap-10 ${
-                scrolled ? "text-black/65" : "text-white/80"
+                scrolled ? "text-black/65 dark:text-white/70" : "text-white/80"
               }`}
             >
               {navItems.map((item) => (
@@ -167,7 +167,9 @@ export function Header() {
                   <Link
                     href={item.href}
                     className={`transition-colors ${
-                      scrolled ? "hover:text-black" : "hover:text-white"
+                      scrolled
+                        ? "hover:text-black dark:hover:text-white"
+                        : "hover:text-white"
                     }`}
                   >
                     {item.label}
