@@ -51,7 +51,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className="font-sans antialiased">
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false} storageKey="slydein-theme">
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} storageKey="slydein-theme">
           {children}
         </ThemeProvider>
         <Analytics />
